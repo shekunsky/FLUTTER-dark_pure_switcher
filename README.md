@@ -2,7 +2,7 @@
 
 **dark_pure_switcher** widget for Flutter project.
 
-![](on_off_switcher.gif)
+![](dark_pure_switcher.gif)
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ For use **dark_pure_switcher** widget in your project:
             sdk: flutter
         dark_pure_switcher:
             git:
-                url: git@github.com:shekunsky/FLUTTER-on_off_switcher.git
+                url: git@github.com:shekunsky/FLUTTER-dark_pure_switcher.git
 ```
 
 2. Import widget in the dart file:
@@ -26,13 +26,13 @@ For use **dark_pure_switcher** widget in your project:
 3. Make an instance of the widget.
 
     ```dart
-         OnOffSwitcher(
-                state: OnOffSwitcherState.switchOn,
+         DarkPureSwitcher(
+                state: DarkPureModeSwitcherState.on,
                 valueChanged: (state) {
-                  if (state == OnOffSwitcherState.switchOn) {
-                    print('State is ON');
+                  if (state == DarkPureModeSwitcherState.on) {
+                    print('Switcher ON');
                   } else {
-                    print('State is OFF');
+                    print('Switcher OFF');
                   }
                 },
               )
