@@ -1,0 +1,1 @@
+enum DarkPureModeSwitcherState { on, off }
